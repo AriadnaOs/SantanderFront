@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-color: rgba(128, 128, 128, 0.377);
+    background-color: white;
 }
 h1 {
     color: blueviolet;
@@ -20,8 +20,16 @@ button {
     color: #fff;
     background-color: #025157;
 }
+.fixed-header {
+    /* position: fixed;  */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
 .header {
     margin: 40px 20px 0 20px;
+    line-height: 45px;
 }
 li {
     display: inline;
@@ -34,6 +42,7 @@ li {
     height: 100%;
     line-height: 45px;
 }
+
 .logo {
     width: 15%;
 }
@@ -65,4 +74,133 @@ li {
     padding: 12px 14px;
     border: none;
     border-radius: 5px;
+}
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video img {
+    width: 120px;
+    margin-top: 10px;
+}
+.txtVideo {
+    color: #025157
+}
+.txtImg {
+    color: #343434;
+}
+
+.seccionGreen {
+    background-color: #a1d683;
+    height: 800px;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+.seccionGreen h1{
+    color: #025157;
+    font-size: 2.7rem;
+    font-family: "Alegreya", serif;
+    width: 30rem;
+    font-weight: bold;
+}
+.seccionGreen p {
+    color: #3a4234;
+    font-size: 1.2rem;
+    width: 40rem;
+    line-height: 1.8rem;
+}
+.infoTxt {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding-right: 5rem;
+    align-content: flex-end;
+    padding-left: 10rem;
+}
+.infoTxt img {
+    width: 25rem;
+    height: 10rem;
+}
+.btnInfo {
+    color: #fff;
+    background-color: #025157;
+    margin: 1rem;
+    padding: .8rem 1rem;
+    border-radius: 6px;
+    border: none;
+    width: 10rem;
+}
+.infoImg {
+    width: 20rem;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+} 
+.infoImg img{
+    height: 20rem;
+    width: 20rem;
+}
+.logoEverly {
+    position: absolute;
+    top: 0px;
+    transform: translate(205%,245%);
+    background-color: #f9da73;
+
+    width: 31%;
+    border-radius: 100%;
+    aspect-ratio: 1;
+}
+.logoEverly img {
+    width: 76%;
+    height: 34%;
+}
+.infoImg h3 {
+    color: #025157;
+    padding: 1rem;
+}
+.infoImg h2 {
+    color: #474343;
+    width: 18rem;
+    padding-left: 1rem;
+}
+.infoImg p {
+    color: #858a82;
+    padding: 1rem 0 0 1rem;
+    width: 15rem;
+}
+.btnLarge {
+    width: 18rem;
+}
+.features{
+    display: grid;
+    /*Hacer 2 columnas y 2 filas*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
+    /*Realizar lo mismo pero con atajo*/
+    /* grid-template: repeat(2, 1fr) / repeat(2, 330px); */
+    background-color: #025157;
+}
+.feature-art {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    margin: 10px;
+    width: 70%;
+    height: 80%;
+    border-radius: 8px;
+}
+.feature-art h3 {
+    font-size: 25px;
+    padding: 30px 15px;
+    /* width: 30px; */
+}
+.feature-art img {
+    height: 80px;
 }
